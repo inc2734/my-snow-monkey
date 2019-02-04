@@ -14,5 +14,5 @@
  */
 $theme = wp_get_theme();
 if ( 'snow-monkey' !== $theme->template && 'snow-monkey/resources' !== $theme->template ) {
- return;
+	return;
 }
