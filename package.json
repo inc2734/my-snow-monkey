@@ -1,0 +1,13 @@
+{
+  "author": "inc2734",
+  "license": "GPL-2.0+",
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "clean:zip": "rimraf my-snow-monkey.zip",
+    "zip:pack": "rsync -a --exclude='.*' --exclude='node_modules' --exclude='package.json' --exclude='package-lock.json' . my-snow-monkey",
+    "zip:archive": "zip -9 -qmr my-snow-monkey.zip my-snow-monkey",
+    "zip": "npm run clean:zip && npm run zip:pack && npm run zip:archive"
+  }
+}
