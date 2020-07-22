@@ -19,9 +19,14 @@ env:
 cache:
   directories:
   - node_modules
+  - resources/vendor
+  - "$HOME/.composer/cache"
 install:
 - nvm install 12
 - npm install
+- composer install
+script:
+- composer test
 before_deploy:
 - npm run zip
 - ls -la my-snow-monkey.zip
