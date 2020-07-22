@@ -19,7 +19,7 @@ env:
 cache:
   directories:
   - node_modules
-  - resources/vendor
+  - vendor
   - "$HOME/.composer/cache"
 install:
 - nvm install 12
