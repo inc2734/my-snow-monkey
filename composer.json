@@ -1,26 +1,25 @@
 {
-  "license": "GPL-2.0-or-later",
-  "require": {
-    "php": ">=5.6"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "*",
-    "wp-coding-standards/wpcs": "*",
-    "phpunit/phpunit": "7.*",
-    "phpcompatibility/phpcompatibility-wp": "*",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3"
-  },
-  "authors": [
-    {
-      "name": "Takashi Kitajima",
-      "email": "inc@2inc.org"
-    }
-  ],
-  "scripts": {
-    "test": [
-      "vendor/bin/phpcs --config-set installed_paths vendor/phpcompatibility/php-compatibility,vendor/phpcompatibility/phpcompatibility-paragonie,vendor/phpcompatibility/phpcompatibility-wp,vendor/wp-coding-standards/wpcs",
-      "vendor/bin/phpcs -p -s -v -n . --standard=./.phpcs.xml.dist --extensions=php"
-    ],
-    "phpcbf": "vendor/bin/phpcbf -p -s -v -n . --standard=./.phpcs.xml.dist --extensions=php"
-  }
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=5.6"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+		"wp-coding-standards/wpcs": "^2.3"
+	},
+	"authors": [
+		{
+			"name": "Takashi Kitajima",
+			"email": "inc@2inc.org"
+		}
+	],
+	"scripts": {
+		"lint": "./vendor/squizlabs/php_codesniffer/bin/phpcs",
+		"format": "./vendor/squizlabs/php_codesniffer/bin/phpcbf"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
 }

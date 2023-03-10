@@ -3,4 +3,5 @@ vendor/
 node_modules/
 my-snow-monkey/
 my-snow-monkey.zip
-package-lock.json
+.wp-env.override.json
+error_log
