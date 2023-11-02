@@ -3,6 +3,7 @@
  * Plugin name: My Snow Monkey
  * Description: このプラグインに、あなたの Snow Monkey 用カスタマイズコードを書いてください。
  * Version: 0.2.3
+ * Update URI: https://snow-monkey.2inc.org
  *
  * @package my-snow-monkey
  * @author inc2734
