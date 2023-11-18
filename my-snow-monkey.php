@@ -31,3 +31,17 @@ define( 'MY_SNOW_MONKEY_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
  * @var string
  */
 define( 'MY_SNOW_MONKEY_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
+
+/**
+ * Display message in console.log if this plugin is enabled.
+ */
+add_action(
+	'wp_footer',
+	function () {
+		if ( is_user_logged_in() ) :
+		?>
+		<script>console.log('My Snow Monkey plugin is active');</script>
+		<?php
+		endif;
+	}
+);
