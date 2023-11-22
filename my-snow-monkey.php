@@ -39,9 +39,9 @@ add_action(
 	'wp_footer',
 	function () {
 		if ( is_user_logged_in() ) :
-		?>
-		<script>console.log('My Snow Monkey plugin is active');</script>
-		<?php
+			?>
+			<script>console.log( 'My Snow Monkey plugin is active' );</script>
+			<?php
 		endif;
 	}
 );

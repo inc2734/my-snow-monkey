@@ -15,4 +15,5 @@ My Snow Monkey プラグインディレクトリへの URL
 My Snow Monkey プラグインディレクトリへの ファイルパス
 
 ### プラグインが読み込まれてるか確認したい場合
+
 このプラグインが読み込まれてる場合は、ブラウザのコンソールに「My Snow Monkey plugin is active」というメッセージが表示されます。
