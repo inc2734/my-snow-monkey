@@ -4,8 +4,8 @@
 		"php": ">=5.6"
 	},
 	"require-dev": {
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-		"wp-coding-standards/wpcs": "^2.3"
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"wp-coding-standards/wpcs": "^3.1"
 	},
 	"authors": [
 		{
@@ -14,8 +14,8 @@
 		}
 	],
 	"scripts": {
-		"lint": "./vendor/squizlabs/php_codesniffer/bin/phpcs",
-		"format": "./vendor/squizlabs/php_codesniffer/bin/phpcbf"
+		"lint": "phpcs --standard=.phpcs.xml.dist",
+		"format": "phpcbf --standard=.phpcs.xml.dist --report-summary --report-source"
 	},
 	"config": {
 		"allow-plugins": {

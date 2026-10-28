@@ -1,7 +1,11 @@
 {
 	"core": "https://wordpress.org/latest.zip",
-	"plugins": [ "." ],
+	"plugins": [
+		"."
+	],
 	"config": {
 		"WP_DEBUG": true
-	}
+	},
+	"port": 8888,
+	"testsEnvironment": false
 }
